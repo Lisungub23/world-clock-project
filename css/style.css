@@ -4,7 +4,10 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  background: white;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/153/497/original/background.jpg?1735219790");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -15,6 +18,7 @@ body {
   box-shadow: rgba(36, 35, 35, 0.1) 0px 10px 20px 0px;
   border-radius: 15px;
   position: relative;
+  margin-top: 30px;
 }
 
 .city {
@@ -26,6 +30,10 @@ body {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
   transform: 0.3s ease;
+}
+.city:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: scale(1.02);
 }
 
 .time {
@@ -85,12 +93,13 @@ h1 {
 
 footer {
   text-align: center;
-  font-size: 16px;
+  font-size: 12px;
   color: black;
   margin-top: 30px;
   padding: 20px;
   background-color: #f8f8f8;
   position: static;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 footer a {
